@@ -336,7 +336,7 @@ function setup(){
 
 (function() {
     'use strict';
-    window.addEventListener('load', function () {
-        setTimeout(setup ,3000);
-    })
+    setTimeout(setup ,5000);
+    //window.addEventListener('load', function () {
+    // })
 })();
