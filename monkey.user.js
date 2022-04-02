@@ -181,8 +181,6 @@ function search_func(){
     if (opt_array.length==0){return;}
     var old_array = search_for_question()[1];
 
-    var selected_opt = search_for_ans();
-    if (selected_opt.length==0){return;}
     opt_array.sort();
     for (let i = 0; i < opt_array.length; i++) {
         key+= opt_array[i];
@@ -190,7 +188,6 @@ function search_func(){
     var data_out = "action=search&key="+key;
     searchflag = false;
     send_request(data_out,"search");
-    
 
 
 }
@@ -275,9 +272,11 @@ function sleep(milliseconds) {
 }
 //=================================================
 
-(function() {
-    'use strict';
-    window.addEventListener('load', function () {
+
+
+function setup(){
+
+
         // check which page I am in right now.
         var questionpage = false;
         var reviewpage = false;
@@ -319,7 +318,6 @@ function sleep(milliseconds) {
                     ;
 
 
-
             document.getElementById("ModuleTitle").appendChild(zNode);
             document.getElementById("searchbtn").addEventListener("click",search_func);
             //document.getElementById("savebtn").addEventListener("click",save_func);
@@ -333,10 +331,12 @@ function sleep(milliseconds) {
 
 
 
+}
 
 
+(function() {
+    'use strict';
+    window.addEventListener('load', function () {
+        setTimeout(setup ,3000);
     })
-    //'<button id="savebtn" type="button">'
- //+ 'save </button><button id="searchbtn" type="button"> search </button>'
-//+ '<button id="deletelastbtn" type="button"> delete last save </button>'
 })();
