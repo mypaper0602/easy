@@ -8,7 +8,7 @@
 // @include            http*://fluency.bds.com/*
 // @grant          GM_xmlhttpRequest
 // @connect localhost
-// @downloadURL   https://github.com/jingbosun/tampermonkeyscript/raw/main/monkey.user.js
+// @downloadURL https://github.com/mypaper0602/easy/blob/main/monkey.user.js
 // ==/UserScript==
 
 
