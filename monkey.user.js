@@ -8,6 +8,7 @@
 // @include            http*://fluency.bds.com/*
 // @grant          GM_xmlhttpRequest
 // @connect localhost
+// @updateURL https://github.com/mypaper0602/easy/blob/main/monkey.user.js
 // @downloadURL https://github.com/mypaper0602/easy/blob/main/monkey.user.js
 // ==/UserScript==
 
@@ -216,12 +217,12 @@ function send_request(data_out,action){
         for (let j = 0; j < old_array.length; j++) {
             var candi_opt= old_array[j];
             if (candi_opt == ans){
-                var label = "option"+j+"Label";
-                var tmp = document.getElementById(label);
-                var option = tmp.textContent;
-                var newstring = "<p style=\"color:blue\"><b>"+option+"</b></p>"
-                const regex = new RegExp(option,'g');
-                tmp.innerHTML = tmp.innerHTML.replace(regex,newstring); // it works
+                // var label = "option"+j+"Label";
+                // var tmp = document.getElementById(label);
+                // var option = tmp.textContent;
+                // var newstring = "<p style=\"color:blue\"><b>"+option+"</b></p>"
+                // const regex = new RegExp(option,'g');
+                // tmp.innerHTML = tmp.innerHTML.replace(regex,newstring); // it works
                 var labelid = "option"+j;
                 document.getElementById(labelid).checked= true;
             }
