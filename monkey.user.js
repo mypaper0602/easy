@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         fluency
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  gg
 // @author       You
 // @match        https://fluency.bds.com/*
